@@ -2,6 +2,7 @@ import Home from "./pages/Home";
 import Items from "./pages/items";
 import About from "./pages/About";
 import ItemDetails from "./pages/itemDetails";
+import Errors from "./pages/errorpage";
 
 import {
   createBrowserRouter,
@@ -15,6 +16,7 @@ function App() {
     {
       path: "/",
       element: <Navbar />,
+      errorElement: <Errors />,
       children: [
         { index: true, element: <Home /> },
         {
